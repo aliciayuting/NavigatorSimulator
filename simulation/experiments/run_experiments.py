@@ -37,8 +37,7 @@ if __name__ == "__main__":
     # 1. create folder to store the experimentation data
     current_directory = os.getcwd()
     for experiment_scheme in experiment_schedulers:
-        experiment_type = "stacked"
-        folder_name = os.path.join(current_directory, "results/" + experiment_type + "/" + experiment_scheme + "/")
+        folder_name = os.path.join(current_directory, "results/" + "/" + experiment_scheme + "/")
         if not os.path.exists(folder_name):
             os.makedirs(folder_name)
             print("Directory created:", folder_name)
